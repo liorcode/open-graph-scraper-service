@@ -22,7 +22,7 @@ class StoriesController {
 
     // Validate the url
     if (!validUrl.isUri(url)) {
-      return response.status(500)
+      return response.status(400)
         .send('Invalid URL');
     }
 
